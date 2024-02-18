@@ -74,35 +74,89 @@ body {
   width: 1170px;
   }
 
-/* h1 */
+/* h1 
+толщина шрифта 400
+
+размер шрифта 60 пикселей
+
+межстрочный интервал 60 пикселей
+
+цвет текста #333*/
 .main_title {
   margin-top: 0;
   margin-bottom: 40px;
 }
 
-/* h2 */
+/* h2 
+размер шрифта 40 пикселей
+
+межстрочный интервал 46 пикселей
+
+цвет текста #333*/
 .title {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* h3 */
+/* h3 
+толщина шрифта 400
+
+размер шрифта 30 пикселей
+
+межстрочный интервал 34 пикселя
+
+цвет текста #333 */
 .subtitle {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* p */
+/* p 
+толщина шрифта 400
+
+размер шрифта 20 пикселей
+
+межстрочный интервал 32 пикселя
+
+цвет текста #333*/
 .text {
   width: 872px;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
-.gray-box{
+/* радиус бордера 20 пикселей
+
+внутренние отступы - сверху и снизу по 50 пикселей, слева и справа по 95 пикселей
+
+ширину 100%
+
+толщину шрифта 700
+
+размер шрифта 30 пикселей
+
+цвет текста - белый
+
+цвет фона #3f2aff*/
+.text__blue-box {
+
+}
+
+/* добавьте каждому из блоков еще один класс, в котором будет только
+свойство background-image. А стили для позиционирования фона пропишите в основной класс
+https://skillbox.ru/media/base/kak_rabotat_s_fonovymi_kartinkami_v_css/*/
+.gray-box {
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
+}
+
+.background__image-decorate-1 {
+  background-image: url('/img/decorate-1.png');
+}
+
+.background__image-decorate-2 {
+  background-image: url('/img/decorate-2.png');
 }
 
 .gray-box:not(:last-child) {
@@ -119,17 +173,43 @@ body {
   padding-left: 15px;
 }
 
+/* бордер снизу толщиной в 1 пиксель, сплошной, и цветом #3f2aff
+
+размер шрифта 20 пикселей
+
+цвет текста #3f2aff */
 .list__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.image{
+ul li::marker {
+  color: #3f2aff;
+  font-size: 1.5em;
+}
+
+.image {
   margin-bottom: 40px;
 }
 
-.image__content{
+.image__content {
   display: inline-block;
   width: 872px;
   margin: 0;
   margin-bottom: 40px;
+  font-size: 0;
+}
+
+/* при этом удалите бордер сверху
+
+внутренний отступ сверху и снизу 19 пикселей
+
+толщина шрифта 400
+
+
+выравнивание текста по центру */
+.image__content figcaption {
+  border-width: 1px;
+  border-style: solid;
+  border: #b6b6b6;
+  font-size: 14px;
 }
